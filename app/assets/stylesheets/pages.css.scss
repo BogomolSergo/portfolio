@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+body {
+  background-image: image-url('assets/images/rails.png');
+}
+
+.menu-main {
+  list-style: none;
+  margin: 4px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+h5 {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 10px;
+  text-align:  center;
+  padding-bottom: 20px;
+  margin: 15px 34px 0 30px;
+  font-size: 37px;
+  text-transform: uppercase;
+  transition: color .2s; 
+}
+
+.ROR {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  text-align:  center;
+  padding-bottom: 20px;
+  margin: 15px 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: color .2s; 
+}
+
+/*************************************************************/
+/* FOOTER                                                    */
+/*************************************************************/
+.footer-row {
+  padding: 20px 0;
+  border-top: 2px solid #d9d9d9;
+}
+.footer-col { 
+  padding: 0 10px; 
+}
+.footer-col:first-child {
+  text-align: center;
+}
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-icon { 
+  display: block;
+  width: 150px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  margin-left: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #a1787e;
+  background-color: rgba(20,20,20,0); 
+  transform: scale(1);
+  transition: .3s linear;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  background: #a1787e;
+  color: #fff;
+}
+
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
