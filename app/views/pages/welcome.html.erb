@@ -1,43 +1,5 @@
-<body>
-<header>
-  <h5 class="title">CORVETT</h5>
-  <ul class="menu-main">
-    <li><a href="" class="current">Work</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Contact</a></li>
-  </ul>
-</header>
-
 <div class="container">
   <p class='ROR'>Learning Rails Framework Fastly!!!!!</p>
     <p class='ROR'>Working fastly as can. Pay me many many babloys za raboty pidr)</p>
-    <button type="button" class="btn btn-primary btn-lg btn-block">See my Work</button>
-
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-    </a>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </div>
+    <%= link_to 'See my Works -->', works_path, :class => "btn btn-primary btn-lg btn-block" %>
 </div>
-
-<footer>
-  <div class="container">
-    <div class="footer-row">
-      <div class="footer-col">
-        <p>Copyright © 2020 CORVETT</p>
-      </div>
-      <div class="footer-col">
-        <div class="social-icons-wrapper">
-          <a class="social-icon" target="_blank" href="https://www.facebook.com/sergey.bogomil"><%= image_tag(asset_path("facebook.png")) %><i class="fa fa-facebook"></i></a>
-          <a class="social-icon" target="_blank" href=""><%= image_tag(asset_path("twitter.png")) %><i class="fa fa-twitter"></i></a>
-          <a class="social-icon" target="_blank" href=""><%= image_tag(asset_path("google-plus.png")) %><i class="fa fa-google-plus"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-</body>
