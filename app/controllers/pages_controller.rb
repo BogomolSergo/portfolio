@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-	def welcome
-	end
+  def welcome
+    @welcome = 'Thank for waching!'
+  end
 end

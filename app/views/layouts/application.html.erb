@@ -17,10 +17,25 @@
 <header>
   <h5 class="title">CORVETT</h5>
   <ul class="menu-main">
-    <li><a href="" class="current">Work</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Contact</a></li>
+    <% if current_page?(works_path) %>
+        <li><%= link_to "Work", works_path, :class => "current"  %></li>
+    <% else %>
+        <li><%= link_to "Work", works_path %></li>
+    <% end %>
+
+    <% if current_page?(about_path) %>
+          <li><%= link_to "About", about_path, :class => "current" %></li>
+    <% else %>
+          <li><%= link_to "About", about_path %></li>
+    <% end %>
+
+    <li><a href="http://www.breinkiller.blogspot.com">Blog</a></li>
+
+    <% if current_page?(contact_path) %>
+          <li><%= link_to "Contact", contact_path, :class => "current" %></li>
+    <% else %>
+          <li><%= link_to "Contact", contact_path %></li>
+    <% end %>
   </ul>
 </header>
 

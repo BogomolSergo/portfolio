@@ -1,0 +1,15 @@
+<h5><%= @work.title %></h5>
+<div class="container">
+  <div class="row">
+    <%= image_tag @work.image, :class => "col-sm" %>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">Description: <%= @work.description %></div>
+    <div class="col-sm-4">Programing language: <%= @work.language %></div>
+  </div>
+  <div class="row">
+    <div class="col-sm">Price: <%= @work.price %> $</div>
+    <div class="col-sm">Added: <%= @work.created_at %></div>
+    <div class="col-sm">Updated: <%= @work.updated_at %></div>
+  </div>
+</div>

@@ -1,7 +1,18 @@
-<div class="banner">
-  <ul>
-    <li>This is a slide.</li>
-    <li>This is another slide.</li>
-    <li>This is a final slide.</li>
-  </ul>
+<tboby>
+<div class="container">
+  <div class="row">
+    <%= @works.each do |w| %>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <%= image_tag w.image, :class => "card-img-top"%>
+          <div class="card-body">
+            <h2 class="card-title"><%= w.title %></h2>
+            <p class="card-text"><%= w.price %> $</p>
+            <%= link_to "View this", show_work_path(w), :class => "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+</tboby>

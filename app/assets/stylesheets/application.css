@@ -14,12 +14,7 @@
  *= require_self
  */
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed')
-@import "bootstrap-sprockets"
-@import "bootstrap"
-body
-    background-image: image-url('assets/images/rails.png');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .menu-main {
     list-style: none;
     margin: 4px 0 5px;
