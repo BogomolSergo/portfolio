@@ -1,7 +1,6 @@
-<tboby>
 <div class="container">
   <div class="row">
-    <%= @works.each do |w| %>
+    <% @works.each do |w| %>
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
           <%= image_tag w.image, :class => "card-img-top"%>
@@ -15,4 +14,4 @@
     <% end %>
   </div>
 </div>
-</tboby>
+
