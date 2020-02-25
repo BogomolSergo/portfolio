@@ -262,11 +262,21 @@ html, body {
 
 
 .form {
+    text-transform: none;
     text-align:center;
     margin: 0 auto 10px;
     padding: 20px 0 10px 0;
     font-size: 16px;
-    width: 300px;
+    width: 800px;
+}
+
+.form-login-signup {
+    text-transform: none;
+    text-align:center;
+    margin: 0 auto 10px;
+    padding: 20px 0 10px 0;
+    font-size: 16px;
+    width: 400px;
 }
 
 input[type=text],
