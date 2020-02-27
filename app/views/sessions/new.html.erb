@@ -1,6 +1,10 @@
 <div class="login">
   <div class="container">
     <div class="form-login-signup">
+      <% if flash[:login_error] %>
+        <div class="alert alert-warning" role="alert"><%= flash[:login_error] %></div>
+      <% end %>
+
       <%= form_for(:session, url: login_path) do |f| %>
         <%= f.email_field :email, :placeholder => "Email" %>
         <%= f.password_field :password, :placeholder => "Password" %>
