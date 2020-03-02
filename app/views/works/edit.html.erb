@@ -1,0 +1,23 @@
+<div class="edit profile">
+  <div class="container">
+    <div class="form">
+
+      <h1>Project editing</h1>
+      <%= form_for(@work) do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+
+        <%= f.label :description %>
+        <%= f.text_field :description, class: 'form-control' %>
+
+        <%= f.label :language %>
+        <%= f.text_field :language, class: 'form-control' %>
+
+        <%= f.label :price %>
+        <%= f.text_field :price, class: 'form-control' %>
+
+        <%= f.submit "_Save changes_", class: "btn-submit" %>
+      <% end %>
+    </div>
+  </div>
+</div>

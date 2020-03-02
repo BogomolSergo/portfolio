@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="col"><h5 class="adm-title">Manage works</h5></div>
     <div class="col"><h5 class="adm-title">Manage users</h5></div>
+    <div class="col"><h5 class="adm-title">Manage works</h5></div>
   </div>
   <div class="row">
     <div class="col">
@@ -12,8 +12,8 @@
                       <h1 class="card-title"><%= label_tag(user.first_name + "  " + user.last_name) %></h1>
                       <h6 class="card-subtitle mb-2 text-muted"><%= label_tag("User id: #{user.id}") %></h6>
                       <p class="card-text"><%= label_tag("Saved @mail: #{user.email}") %></p>
-                      <a href="#" class="card-link">Edit</a>
-                      <a href="#" class="card-link">Delete user!</a>
+                      <%= link_to 'Edit', edit_user_path(user[:id]), class: "btn-submit" %>
+                      <%= link_to 'Delete', user_path(user[:id]), method: :delete, data: { confirm: "You sure?" },  class: "btn-submit"  if current_user&.admin? %>
                     </div>
                   </div>
             <% end %>
@@ -29,13 +29,13 @@
               <h1 class="card-image"><%= image_tag work.image, :class => "col-sm" %></h1>
               <h6 class="card-subtitle mb-2 text-muted"><%= label_tag("Project price: #{work.price}") %></h6>
               <p class="card-text">
-                <p class="adm-info"> Programing language: <%= work.language %></p>
-                <p class="adm-info">  Description: <%= work.description %></p>
-                <p class="adm-info"> Added: <%= work.created_at %></p>
-                <p class="adm-info"> Updated: <%= work.updated_at %></p>
+                <p><%= label_tag("Programing language: #{work.language}") %></p>
+                <p><%= label_tag("Description: #{work.description}") %></p>
+                <p><%= label_tag("Added: #{work.created_at}") %></p>
+                <p><%= label_tag("Updated: #{work.updated_at}") %></p>
               </p>
-              <a href="#" class="card-link">Edit</a>
-              <a href="#" class="card-link">Delete project!</a>
+              <%= link_to 'Edit', edit_work_path(work[:id]), class: "btn-submit" %>
+              <%= link_to 'Delete', work_path(work[:id]), method: :delete, data: { confirm: "You sure?" },  class: "btn-submit"  if current_user&.admin? %>
             </div>
           </div>
         <% end %>
