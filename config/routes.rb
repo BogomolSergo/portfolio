@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   resources :comments
 
-  get '/admin' => 'pages#admin_pg', as: :admin
+  get '/admin' => 'pages#admin', as: :admin
 end

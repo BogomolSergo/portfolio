@@ -1,15 +1,44 @@
 <div class="container">
   <div class="row">
-    <div class="col">Manage works</div>
-    <div class="col">Manage users</div>
+    <div class="col"><h5 class="adm-title">Manage works</h5></div>
+    <div class="col"><h5 class="adm-title">Manage users</h5></div>
   </div>
   <div class="row">
     <div class="col">
-      <%= form_with do %>
-      <% end %>
+          <% @users.each do |user| %>
+            <%= form_with model: user do %>
+                  <div class="card" style="width: 33rem;">
+                    <div class="card-body">
+                      <h1 class="card-title"><%= label_tag(user.first_name + "  " + user.last_name) %></h1>
+                      <h6 class="card-subtitle mb-2 text-muted"><%= label_tag("User id: #{user.id}") %></h6>
+                      <p class="card-text"><%= label_tag("Saved @mail: #{user.email}") %></p>
+                      <a href="#" class="card-link">Edit</a>
+                      <a href="#" class="card-link">Delete user!</a>
+                    </div>
+                  </div>
+            <% end %>
+          <% end %>
     </div>
+
     <div class="col">
-      <%= form_with do %>
+      <% @works.each do |work| %>
+        <%= form_with model: work do %>
+          <div class="card" style="width: 33rem;">
+            <div class="card-body">
+              <h1 class="card-title"><%= label_tag(work.title) %></h1>
+              <h1 class="card-image"><%= image_tag work.image, :class => "col-sm" %></h1>
+              <h6 class="card-subtitle mb-2 text-muted"><%= label_tag("Project price: #{work.price}") %></h6>
+              <p class="card-text">
+                <p class="adm-info"> Programing language: <%= work.language %></p>
+                <p class="adm-info">  Description: <%= work.description %></p>
+                <p class="adm-info"> Added: <%= work.created_at %></p>
+                <p class="adm-info"> Updated: <%= work.updated_at %></p>
+              </p>
+              <a href="#" class="card-link">Edit</a>
+              <a href="#" class="card-link">Delete project!</a>
+            </div>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>
