@@ -15,7 +15,8 @@
 </head>
 <body>
 <header>
-  <h5 class="title">CORVETT</h5><% if current_user %><p class="log-user-email">Logined as: <%= current_user.email %></p><% end %>
+  <h5 class="title">CORVETT</h5>
+    <p class="log-user-email"><%= "Logined as: #{current_user.email}" if current_user %></p>
    <ul class="menu-main">
     <% if current_page?(works_path) %>
         <li><%= link_to "Work", works_path, :class => "current"  %></li>
@@ -38,17 +39,19 @@
     <% end %>
 
      <% if current_user %>
-       <ul>
          <% if current_page?(signup_path) %>
           <li><%= link_to "Profile", user_path(current_user[:id]), :class => "current" %></li>
          <% else %>
            <li><%= link_to "Profile", user_path(current_user[:id]) %>
          <% end %>
+         <li>
+           <% if current_user.admin? %>
+             <%= link_to 'Admin', admin_path %>
+           <% end %>
+         </li>
 
          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
-       </ul>
      <% else %>
-       <ul>
          <li>
            <% if current_page?(signup_path) %>
              <%= link_to "SignUp", signup_path, :class => "current" %>
@@ -63,7 +66,6 @@
              <%= link_to "Login", login_path %>
            <% end %>
          </li>
-       </ul>
      <% end %>
 
 
