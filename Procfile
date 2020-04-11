@@ -1,1 +1,1 @@
-web: bundle exec puma -C config/puma.rb
+web (Free): bin/rails server -p $PORT -e $RAILS_ENV
