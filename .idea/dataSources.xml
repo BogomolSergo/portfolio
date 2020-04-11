@@ -9,5 +9,19 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="SQLite - portfolio.sqlite" uuid="8a377705-7bcf-47ab-b04f-6d22cf3ef87f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:portfolio.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails portfolio: production" uuid="f0228ee7-e177-42ee-a9e9-92476ad75a56">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/db/production.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>

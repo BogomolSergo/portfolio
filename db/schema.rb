@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_02_25_084717) do
 
   create_table "comments", force: :cascade do |t|
     t.string "title"
-    t.text "text"
+    t.text "textexit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
