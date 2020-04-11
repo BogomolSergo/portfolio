@@ -5,7 +5,11 @@ ruby '2.5.7'
 gem 'rails_12factor', group: :production
 gem 'bootstrap', '4.4.1'
 gem 'react-rails', '~> 1.0'
-gem 'bootstrap-sass'heroku create myapp
+gem 'bootstrap-sass'
+
+# CDN
+gem "asset_sync"
+gem "fog-aws"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record
