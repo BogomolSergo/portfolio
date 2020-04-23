@@ -7,5 +7,29 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/portfolio_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails portfolio: test" uuid="cc213a05-fd43-464d-9633-526b1f3309c0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/portfolio_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails portfolio: development" uuid="fc2c256d-d03a-45cf-b55a-d0f94cc90efc">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/portfolio_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails portfolio: production" uuid="784e7c30-00f1-4abb-9a30-687abf1d553c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/db/production.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>

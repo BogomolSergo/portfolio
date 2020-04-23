@@ -1,0 +1,197 @@
+/* clean all defauls styles which setyp browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.resume {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  background: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.my-photo {
+  width: 370px;
+}
+/* next mine */
+.sidebar {
+  background: #1e2939;
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.maint-into-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.general-container-ul {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-left: 16px;
+}
+
+.soft-skills-container {
+  width: 400px;
+  margin-top: 55px;
+  margin-left: 40px;
+}
+
+.tech-skills-container {
+  width: 400px;
+  margin-top: 55px;
+  margin-left: 40px;
+}
+.tech-skills-item, .soft-skills-item {
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+}
+
+.tech-skills-text, .soft-skills-text {
+  color: #e4e5e6;
+}
+
+.contact-container {
+  width: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.sidebar-titles {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  color: #686f7a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 166px;
+}
+
+.contact-link-type {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+/* lesson 4  style wrapper*/
+.about-me-container {
+  margin-bottom: 60px;
+}
+
+.specialist {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  margin-bottom: 50px;
+  display: f;
+}
+
+.my-name-text {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.free-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858585;
+}
+
+.wrapper-titles {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  /*padding-bottom: 15px;*/
+}
+
+.projects-ol-items {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 500px;
+}
+
+.projects-item-link, .project-tehnology {
+  color: #858585;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.proffesion-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.proffesion-component {
+  color: #ff7010;
+}
+
+.proffesion-time {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.proffesion-divider {
+  color: #000000;
+}
+
+.education-proffesion {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.education-discription {
+  padding-top: 15px;
+}

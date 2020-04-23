@@ -1,35 +1,150 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-4">
-      <figure class="figure">
-        <%= image_tag 'https://bigpicture.ru/wp-content/uploads/2018/11/219.jpg', :class => "figure-img img-fluid rounded" %>>
-        <figcaption class="figure-caption">That me).</figcaption>
-      </figure>
-    </div>
-    <div class="col-4">
-      <pre><code>
-        &lt;div class="Vvajna enfa"&gt;
-          &lt;p&gt; --- Kontaktu vnizy --- &lt;/p&gt;
-          &lt;p&gt; Esli chto - pishute =) &lt;/p&gt;
-        &lt;/div&gt;
-      </code></pre>
-    </div>
-  </div>
+<div class="resume">
+  <!-- general container -->
+  <div class="wrapper">
+    <aside class="sidebar">
+      <%= image_tag 'photo.jpg', :class => "my-photo" %>
 
-  <div class="row justify-content-around">
-    <div class="col-4">
-      Email: breinkiller650@gmail.com
-    </div>
-    <div class="col-4">
-      *
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-4">
-      *
-    </div>
-    <div class="col-4">
-      *
+      <!-- contact block -->
+      <div class="contact-container">
+        <h3 class="sidebar-titles">Contacts</h3>
+        <div>
+          <span class="contact-link-type">C:</span>
+          <a class="contacts-link" href="tel:380930851354">+38 093 085 13 54</a>
+        </div>
+        <div>
+          <span class="contact-link-type">E:</span>
+          <a class="contacts-link" href="mailto:premierror@gmail.com">premierror@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- tech skills block -->
+      <div class="tech-skills-container">
+        <h3 class="sidebar-titles">Tech Skills</h3>
+        <ul class="tech-skills-item">
+          <li><span class="tech-skills-text">HTML5</span></li>
+          <li><span class="tech-skills-text">CSS3</span></li>
+          <li><span class="tech-skills-text">GIT</span></li>
+          <li><span class="tech-skills-text">WebPack</span></li>
+          <li><span class="tech-skills-text">JavaScript</span></li>
+          <li><span class="tech-skills-text">React.js</span></li>
+          <li><span class="tech-skills-text">Node.js</span></li>
+        </ul>
+      </div>
+
+      <!-- soft skils -->
+      <div class="soft-skills-container">
+        <h3 class="sidebar-titles">Soft Skills</h3>
+        <ul class="soft-skills-item">
+          <li><span class="soft-skills-text">Scrum</span></li>
+          <li><span class="soft-skills-text">Agile</span></li>
+          <li><span class="soft-skills-text">GTD</span></li>
+          <li><span class="soft-skills-text">Teamwork</span></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- main info container -->
+    <div class="maint-into-container">
+
+      <!-- about me -->
+      <div class="about-me-container">
+        <h2 class="specialist">Front-End Developer</h2>
+        <h1 class="my-name-text">Bogomol Sergey</h1>
+        <p class="free-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        </p>
+      </div>
+
+      <!-- project container -->
+      <div class="projects-container">
+        <h3 class="wrapper-titles">Projects</h3>
+        <ol class="projects-ol-items">
+          <li>
+            <a class="projects-item-link" href="https://lovecamp.allinsol.com/">https://lovecamp.allinsol.com/</a>
+            <span class="project-tehnology">..............</span>
+            <b>[</b><span class="project-tehnology"> HTML5, CSS3 </span><b>]</b>
+          </li>
+          <li>
+            <a class="projects-item-link" href="https://cryptohub.goit.ua/">https://cryptohub.goit.ua/</a>
+            <span class="project-tehnology">........................</span>
+            <b>[</b><span class="project-tehnology"> JavaScript </span><b>]</b>
+          </li>
+          <li>
+            <a class="projects-item-link" href="https://kidslike.goit.co.ua/">https://kidslike.goit.co.ua/</a>
+            <span class="project-tehnology">........................</span>
+            <b>[</b><span class="project-tehnology"> React.js, Node.js </span><b>]</b>
+          </li>
+        </ol>
+      </div>
+
+      <!-- work experience container -->
+      <div>
+        <h3 class="wrapper-titles">Work Experience</h3>
+        <!-- company 1-->
+        <div>
+          <h4 class="proffesion-title">Front-End Developer <span class="proffesion-component">Freelance</span></h4>
+          <span class="proffesion-time">September 2019 - up to now <span class="proffesion-divider">|</span> Ukraine</span>
+          <ul class="general-container-ul">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+              Risus commodo viverra maecenas.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </li>
+          </ul>
+        </div>
+
+        <!-- company 2 -->
+        <div>
+          <h4 class="proffesion-title">Manager <span class="proffesion-component">Roga & Kopyta New</span></h4>
+          <span class="proffesion-time">March 2015 - October 2018 <span class="proffesion-divider">|</span> Ukraine</span>
+          <ul class="general-container-ul">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.
+            </li>
+            <li>
+              Quis ipsum suspendisse ultrices gravida.
+            </li>
+            <li>
+              Risus commodo viverra maecenas.
+            </li>
+          </ul>
+        </div>
+
+        <!-- company 3-->
+        <div>
+          <h4 class="proffesion-title">Manager <span class="proffesion-component">Roga & Kopyta LLC</span></h4>
+          <span class="proffesion-time">June 2014 - February 2015 <span class="proffesion-divider">|</span> Ukraine</span>
+          <ul class="general-container-ul">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+              Quis ipsum suspendisse ultrices gravida.
+            </li>
+            <li>
+              Risus commodo viverra maecenas.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- education container -->
+      <div>
+        <h3 class="wrapper-titles">Education</h3>
+        <!-- education 1 -->
+        <div class="education-discription">
+          <h4 class="proffesion-title, proffesion-component">Kharkiv National University of Radioelectronics</h4>
+          <h6 class="education-proffesion">Management</h6>
+          <span class="proffesion-time">Septermber 2009 - June 2014 <span class="proffesion-divider">|</span> Ukraine</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
